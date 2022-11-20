@@ -29,7 +29,7 @@ resource "aws_db_instance" "db-server" {
   auto_minor_version_upgrade = true
   backup_retention_period = 0
   identifier = "phonebook-app-db"
-  name = "phonebook"
+  db_name = "phonebook"
   engine = "mysql"
   engine_version = "8.0.23"
   username = "admin"
